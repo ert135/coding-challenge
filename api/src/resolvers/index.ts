@@ -7,7 +7,6 @@ const resolvers = {
       _: any,
       {offset, limit}:{offset: any, limit: number}
     ) => {
-      console.log('Running hererererere', offset);
       return getDocuments().slice(offset, limit)
     },
     document: ({id}: {id: string}) => {
